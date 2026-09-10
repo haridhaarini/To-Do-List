@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #daee8c;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Main Todo App box */
+.todo-container {
+    width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Heading */
+.todo-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #1a237e;
+}
+
+
+/* Input and ADD button */
+.input-area {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+
+/* Input box */
+.task-input {
+    flex: 1;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+
+/* Input focus */
+.task-input:focus {
+    border-color: #2196f3;
+}
+
+
+/* ADD button */
+.add-btn {
+    padding: 15px 30px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Task list */
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Each task */
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px;
+    margin-bottom: 12px;
+
+    background-color: #f8f9ff;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Task text */
+.task-item span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #222;
+}
+
+
+/* Completed task */
+.completed-task {
+    text-decoration: line-through;
+    color: gray !important;
+}
+
+
+/* Three buttons */
+.button-group {
+    display: flex;
+    gap: 8px;
+}
+
+
+/* Common button style */
+.complete-btn,
+.edit-btn,
+.delete-btn {
+    padding: 9px 13px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* COMPLETE button */
+.complete-btn {
+    background-color: #16a085;
+}
+
+
+/* EDIT button */
+.edit-btn {
+    background-color: #f39c12;
+}
+
+
+/* DELETE button */
+.delete-btn {
+    background-color: #e74c3c;
+}
+
+
+/* Button hover effect */
+.add-btn:hover,
+.complete-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover {
+    opacity: 0.8;
+}
+
+
+/* Mobile responsive */
+@media (max-width: 750px) {
+
+    .todo-container {
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .button-group {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+}
