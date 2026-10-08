@@ -6,7 +6,7 @@ body {
 }
 
 
-/* Main Todo App box */
+
 .todo-container {
     width: 700px;
     margin: 50px auto;
@@ -17,7 +17,7 @@ body {
 }
 
 
-/* Heading */
+
 .todo-container h1 {
     text-align: center;
     margin-bottom: 30px;
@@ -26,7 +26,7 @@ body {
 }
 
 
-/* Input and ADD button */
+
 .input-area {
     display: flex;
     gap: 15px;
@@ -34,7 +34,7 @@ body {
 }
 
 
-/* Input box */
+
 .task-input {
     flex: 1;
     padding: 15px;
@@ -124,25 +124,25 @@ body {
 }
 
 
-/* COMPLETE button */
+
 .complete-btn {
     background-color: #16a085;
 }
 
 
-/* EDIT button */
+
 .edit-btn {
     background-color: #f39c12;
 }
 
 
-/* DELETE button */
+
 .delete-btn {
     background-color: #e74c3c;
 }
 
 
-/* Button hover effect */
+
 .add-btn:hover,
 .complete-btn:hover,
 .edit-btn:hover,
@@ -151,7 +151,7 @@ body {
 }
 
 
-/* Mobile responsive */
+
 @media (max-width: 750px) {
 
     .todo-container {

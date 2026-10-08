@@ -5,7 +5,7 @@ const TodoApp = () => {
     const [task, setTask] = useState("");
     const [tasks, setTasks] = useState([]);
 
-    // ADD TASK
+    
     const addTask = () => {
         if (task.trim() === "") return;
 
@@ -20,7 +20,7 @@ const TodoApp = () => {
         setTask("");
     };
 
-    // COMPLETE TASK
+    
     const completeTask = (index) => {
         setTasks(previous =>
             previous.map((item, i) =>
@@ -31,7 +31,7 @@ const TodoApp = () => {
         );
     };
 
-    // EDIT TASK
+    
     const editTask = (index) => {
         const newTask = prompt(
             "Edit your task:",
@@ -49,7 +49,7 @@ const TodoApp = () => {
         }
     };
 
-    // DELETE TASK
+   
     const deleteTask = (index) => {
         setTasks(previous =>
             previous.filter((_, i) => i !== index)
